@@ -9,7 +9,7 @@ import kotlinx.coroutines.withContext
 class YouTubeRepository {
 
     private val api = RetrofitClient.youtubeApi
-    private val apiKey = "AIzaSyDUz5g7_G1_kxK_3AN3v-OVoZMU1kpmHiA"
+    private val apiKey = "YOUR_API_KEY"
 
     companion object {
         private const val TAG = "YouTubeRepository"
@@ -117,4 +117,5 @@ class YouTubeRepository {
             return ""
         }
     }
+
 }
