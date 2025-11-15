@@ -4,12 +4,17 @@
 
 ---
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Platform-Android-success?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Language-Kotlin-7F52FF?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Category-Kids%20Education-FF69B4?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Status-Active-2EA44F?style=for-the-badge" />
-</p>
+<div align="center" style="padding: 10px;">
+
+<strong>📌 Project Info</strong>
+
+<br><br>
+
+<img src="https://img.shields.io/badge/Platform-Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" />
+<img src="https://img.shields.io/badge/Language-Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white" />
+<img src="https://img.shields.io/badge/Category-Kids%20Education-FF69B4?style=for-the-badge" />
+
+</div>
 
 
 ---
