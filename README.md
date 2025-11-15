@@ -196,21 +196,6 @@ app/
 
 ---
 
-# 🏫 **Institution**
-
-**Marwadi University**
-Faculty of Engineering and Technology
-Rajkot, Gujarat, India
-
----
-
-# 📬 **Contact**
-
-📧 **[ce.apps@marwadieducation.edu.in](mailto:ce.apps@marwadieducation.edu.in)**
-📍 Rajkot–Morbi Highway, Gujarat, India
-
----
-
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=FF6FD8&height=100&section=footer" />
 </p>
