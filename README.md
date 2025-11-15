@@ -38,11 +38,6 @@
 With **colorful graphics**, **playful sounds**, and **friendly activities**, kids learn while having fun! 🎨📚🎵
 
 ---
-✨**Banner**
-
-<p align="center"> <img src="https://github.com/user-attachments/assets/39f2ca99-799b-4274-be9c-30c307e120e4" alt="Banner" width="100%" style="border-radius: 12px;" /> </p>
-
----
 📸 **App Screenshots**
 <p align="center"> <img src="https://github.com/user-attachments/assets/e1ef2ce7-4db7-43b2-85b6-e62de47c62b0" alt="Mobile_SS_1" width="260" style="border-radius: 18px; margin: 10px;" />
 
