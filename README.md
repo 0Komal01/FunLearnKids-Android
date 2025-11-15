@@ -207,8 +207,5 @@ app/
 </p>
 
 <h2 align="center">🎈 Made with ❤️ for Kids</h2>
-
-© 2024 Marwadi University. All Rights Reserved.
-
 ---
 
