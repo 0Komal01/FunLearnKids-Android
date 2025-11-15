@@ -5,10 +5,12 @@
 ---
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Platform-Android-brightgreen?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Language-Kotlin-blueviolet?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Category-Kids Education-ff69b4?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Platform-Android-success?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Language-Kotlin-7F52FF?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Category-Kids%20Education-FF69B4?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Status-Active-2EA44F?style=for-the-badge" />
 </p>
+
 
 ---
 
