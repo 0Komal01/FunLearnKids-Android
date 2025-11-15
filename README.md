@@ -13,9 +13,6 @@
 # 📌 **Project Info**
 
 <p align="center">
-
-  <img src="https://cdn-icons-png.flaticon.com/512/2913/2913465.png" width="90" />
-
 <br><br>
 
   <img src="https://img.shields.io/badge/Platform-Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" />
@@ -35,12 +32,6 @@
 
 ---
 
-<p align="center">
-  <img src="https://img.shields.io/badge/-_-gradient?style=for-the-badge&colorA=ff9a9e&colorB=fad0c4&label=" width="90%" />
-</p>
-
----
-
 # 🌈 **Welcome to FunLearn Kids!**
 
 **FunLearn Kids: ABC & 123** is a joyful, interactive Android app crafted for early learners.
@@ -49,7 +40,11 @@ With **colorful graphics**, **playful sounds**, and **friendly activities**, kid
 ---
 
 📸 App Screenshots
-<p align="center"> <img src="https://img.shields.io/badge/App%20Preview-%F0%9F%93%B7%20Screenshots-ff9a9e?style=for-the-badge" /> </p> <p align="center"> <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" width="80" /> </p>
+<img width="1080" height="2400" alt="Mobile_SS_1" src="https://github.com/user-attachments/assets/e1ef2ce7-4db7-43b2-85b6-e62de47c62b0" />
+<br>
+<img width="1080" height="2400" alt="Mobile_SS_2" src="https://github.com/user-attachments/assets/fd22296a-374b-450d-8efe-4250eae2586c" />
+<br>
+<img width="1080" height="2400" alt="Mobile_SS_3" src="https://github.com/user-attachments/assets/1f994ecb-a8a2-4a3d-bd7c-03911229c4ca" />
 
 ---
 
