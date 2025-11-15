@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background">
+
+    <!-- Header -->
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/header_gradient"
+        android:padding="16dp"
+        android:elevation="8dp">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_back"
+            android:padding="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Choose Art Mode"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:letterSpacing="-0.03"
+            android:fontFamily="sans-serif-medium"
+            android:shadowColor="#80000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="4" />
+
+    </RelativeLayout>
+
+    <!-- Mode Selection Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="16dp">
+
+        <!-- Draw Mode Button -->
+        <Button
+            android:id="@+id/draw_mode_button"
+            android:layout_width="280dp"
+            android:layout_height="120dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/draw_mode_button_background"
+            android:drawablePadding="16dp"
+            android:drawableTop="@drawable/ic_draw"
+            android:gravity="center"
+            android:text="✨ DRAW MODE\nGlittery Colors!"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:letterSpacing="-0.02" />
+
+        <!-- Color Fill Mode Button -->
+        <Button
+            android:id="@+id/color_fill_mode_button"
+            android:layout_width="280dp"
+            android:layout_height="120dp"
+            android:background="@drawable/color_fill_mode_button_background"
+            android:drawablePadding="16dp"
+            android:drawableTop="@drawable/ic_color_fill"
+            android:gravity="center"
+            android:text="🎨 COLOR FILL\nColoring Book!"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:letterSpacing="-0.02" />
+
+    </LinearLayout>
+
+</RelativeLayout>

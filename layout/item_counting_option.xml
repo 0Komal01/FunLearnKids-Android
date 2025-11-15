@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/btnOption"
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:layout_margin="8dp"
+    android:text="5"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    android:textColor="@android:color/white"
+    android:background="@drawable/option_button_background" />

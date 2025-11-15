@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardMemory"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="6dp"
+    app:cardBackgroundColor="@android:color/white">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Card Back (shown when not flipped) -->
+        <ImageView
+            android:id="@+id/ivCardBack"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FF48C9B0"
+            android:scaleType="centerInside"
+            android:padding="12dp" />
+
+        <!-- Card Front (shown when flipped) -->
+        <ImageView
+            android:id="@+id/ivCardFront"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:padding="12dp"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+</androidx.cardview.widget.CardView>

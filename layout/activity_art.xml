@@ -1,0 +1,293 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background">
+
+    <!-- Header -->
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/header_gradient"
+        android:padding="16dp"
+        android:elevation="8dp">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_back"
+            android:padding="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="✨ Glitter Art"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:letterSpacing="-0.03"
+            android:fontFamily="sans-serif-medium"
+            android:shadowColor="#80000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="4" />
+
+        <ImageView
+            android:id="@+id/btn_save"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_save"
+            android:padding="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless" />
+    </RelativeLayout>
+
+    <!-- Drawing Area -->
+    <RelativeLayout
+        android:id="@+id/drawing_area"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header"
+        android:layout_above="@+id/bottom_control_panel"
+        android:padding="8dp">
+
+        <com.marwadiuniversity.abckids.GlitterDrawingView
+            android:id="@+id/drawing_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="@android:color/white" />
+    </RelativeLayout>
+
+    <!-- Bottom Control Panel -->
+    <LinearLayout
+        android:id="@+id/bottom_control_panel"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/panel_background"
+        android:orientation="vertical"
+        android:padding="6dp">
+
+        <!-- Controls Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_marginBottom="4dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="4dp">
+
+            <!-- Brush Size Control -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:text="Size:"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:letterSpacing="-0.02" />
+
+            <SeekBar
+                android:id="@+id/brush_size_seekbar"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:max="25"
+                android:progress="5" />
+
+            <!-- Control Buttons -->
+            <Button
+                android:id="@+id/glitter_button"
+                android:layout_width="55dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="3dp"
+                android:background="@android:color/darker_gray"
+                android:padding="2dp"
+                android:text="Glitter"
+                android:textColor="@android:color/white"
+                android:textSize="8sp"
+                android:letterSpacing="-0.02" />
+
+            <Button
+                android:id="@+id/erase_button"
+                android:layout_width="45dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="3dp"
+                android:background="@android:color/darker_gray"
+                android:padding="2dp"
+                android:text="Erase"
+                android:textColor="@android:color/white"
+                android:textSize="8sp"
+                android:letterSpacing="-0.02" />
+
+            <Button
+                android:id="@+id/clear_button"
+                android:layout_width="45dp"
+                android:layout_height="24dp"
+                android:background="@android:color/darker_gray"
+                android:padding="2dp"
+                android:text="Clear"
+                android:textColor="@android:color/white"
+                android:textSize="8sp"
+                android:letterSpacing="-0.02" />
+        </LinearLayout>
+
+        <!-- Color Buttons Grid - 2 rows -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scrollbars="none">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="4dp"
+                android:columnCount="11"
+                android:rowCount="2">
+
+                <Button
+                    android:id="@+id/color_red"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_margin="2dp" />
+
+                <Button
+                    android:id="@+id/color_blue"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_margin="2dp" />
+
+                <Button
+                    android:id="@+id/color_green"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_margin="2dp" />
+
+                <Button
+                    android:id="@+id/color_yellow"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_margin="2dp" />
+
+                <Button
+                    android:id="@+id/color_purple"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_margin="2dp" />
+
+                <Button
+                    android:id="@+id/color_orange"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_margin="2dp" />
+
+                <Button
+                    android:id="@+id/color_pink"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_margin="2dp" />
+
+                <Button
+                    android:id="@+id/color_cyan"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_margin="2dp" />
+
+                <Button
+                    android:id="@+id/color_black"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_margin="2dp" />
+
+                <Button
+                    android:id="@+id/color_white"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_margin="2dp" />
+
+                <Button
+                    android:id="@+id/color_gray"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_margin="2dp" />
+
+                <Button
+                    android:id="@+id/color_magenta"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_margin="2dp" />
+
+                <Button
+                    android:id="@+id/color_brown"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_margin="2dp" />
+
+                <Button
+                    android:id="@+id/color_gold"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_margin="2dp" />
+
+                <Button
+                    android:id="@+id/color_spring_green"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_margin="2dp" />
+
+                <Button
+                    android:id="@+id/color_deep_pink"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_margin="2dp" />
+
+                <Button
+                    android:id="@+id/color_royal_blue"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_margin="2dp" />
+
+                <Button
+                    android:id="@+id/color_tomato"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_margin="2dp" />
+
+                <Button
+                    android:id="@+id/color_dark_orchid"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_margin="2dp" />
+
+                <Button
+                    android:id="@+id/color_lime_green"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_margin="2dp" />
+
+                <Button
+                    android:id="@+id/color_hot_pink"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_margin="2dp" />
+
+                <Button
+                    android:id="@+id/color_dark_turquoise"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_margin="2dp" />
+            </GridLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

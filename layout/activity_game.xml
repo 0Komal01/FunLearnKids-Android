@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background Image -->
+    <ImageView
+        android:id="@+id/background_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/animal_game_bg"
+        android:scaleType="centerCrop"
+        android:alpha="0.7" />
+
+    <!-- Foreground Content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@android:color/transparent">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:background="@drawable/header_gradient">
+
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_back"
+                android:padding="8dp"
+                android:background="?attr/selectableItemBackgroundBorderless" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Animal Quiz"
+                android:textSize="24sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/comic_sans"
+                android:gravity="center"
+                android:textStyle="bold" />
+
+            <!-- Added Restart Button for Memory Game -->
+            <ImageView
+                android:id="@+id/restart_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@android:drawable/ic_menu_rotate"
+                android:padding="8dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <!-- Memory Game Stats (Hidden by default) -->
+        <LinearLayout
+            android:id="@+id/memory_stats_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="16dp"
+            android:background="#80FFFFFF"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/score_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Score: 0"
+                android:textSize="16sp"
+                android:textColor="#1976D2"
+                android:fontFamily="sans-serif-medium"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:padding="12dp"
+                android:background="@drawable/rounded_white_bg"
+                android:layout_marginEnd="8dp"
+                android:elevation="4dp" />
+
+            <TextView
+                android:id="@+id/moves_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Moves: 0"
+                android:textSize="16sp"
+                android:textColor="#F57C00"
+                android:fontFamily="sans-serif-medium"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:padding="12dp"
+                android:background="@drawable/rounded_white_bg"
+                android:layout_marginStart="8dp"
+                android:elevation="4dp" />
+
+        </LinearLayout>
+
+        <!-- Game Content -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="24dp">
+
+            <!-- Question Text with solid background -->
+            <TextView
+                android:id="@+id/question_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What animal is this?"
+                android:textSize="26sp"
+                android:textColor="#000000"
+                android:fontFamily="@font/comic_sans"
+                android:layout_marginBottom="32dp"
+                android:gravity="center"
+                android:padding="16dp"
+                android:background="@drawable/rounded_white_bg"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:elevation="4dp" />
+
+            <!-- Animal Emoji with white background -->
+            <TextView
+                android:id="@+id/animal_emoji"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:text="🐘"
+                android:textSize="80sp"
+                android:layout_marginBottom="48dp"
+                android:gravity="center"
+                android:background="@drawable/rounded_white_bg"
+                android:elevation="4dp" />
+
+            <!-- Memory Game Grid (Hidden by default) -->
+            <ScrollView
+                android:id="@+id/memory_game_container"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <GridLayout
+                        android:id="@+id/memory_game_grid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:columnCount="4"
+                        android:rowCount="4"
+                        android:alignmentMode="alignBounds"
+                        android:useDefaultMargins="true" />
+
+                </LinearLayout>
+
+            </ScrollView>
+
+            <!-- Answer Buttons -->
+            <LinearLayout
+                android:id="@+id/quiz_buttons_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="16dp">
+
+                    <Button
+                        android:id="@+id/answer_btn_1"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="8dp"
+                        android:text="Option 1"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:background="@drawable/rounded_white_bg"
+                        android:elevation="4dp" />
+
+                    <Button
+                        android:id="@+id/answer_btn_2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:layout_marginStart="8dp"
+                        android:text="Option 2"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:background="@drawable/rounded_white_bg"
+                        android:elevation="4dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/answer_btn_3"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="8dp"
+                        android:text="Option 3"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:background="@drawable/rounded_white_bg"
+                        android:elevation="4dp" />
+
+                    <Button
+                        android:id="@+id/answer_btn_4"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:layout_marginStart="8dp"
+                        android:text="Option 4"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:background="@drawable/rounded_white_bg"
+                        android:elevation="4dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
