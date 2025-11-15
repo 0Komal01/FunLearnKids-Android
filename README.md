@@ -38,13 +38,19 @@
 With **colorful graphics**, **playful sounds**, and **friendly activities**, kids learn while having fun! 🎨📚🎵
 
 ---
+✨**Banner**
 
-📸 App Screenshots
-<img width="1080" height="2400" alt="Mobile_SS_1" src="https://github.com/user-attachments/assets/e1ef2ce7-4db7-43b2-85b6-e62de47c62b0" />
-<br>
-<img width="1080" height="2400" alt="Mobile_SS_2" src="https://github.com/user-attachments/assets/fd22296a-374b-450d-8efe-4250eae2586c" />
-<br>
-<img width="1080" height="2400" alt="Mobile_SS_3" src="https://github.com/user-attachments/assets/1f994ecb-a8a2-4a3d-bd7c-03911229c4ca" />
+<p align="center"> <img src="https://github.com/user-attachments/assets/39f2ca99-799b-4274-be9c-30c307e120e4" alt="Banner" width="100%" style="border-radius: 12px;" /> </p>
+
+---
+📸 **App Screenshots**
+<p align="center"> <img src="https://github.com/user-attachments/assets/e1ef2ce7-4db7-43b2-85b6-e62de47c62b0" alt="Mobile_SS_1" width="260" style="border-radius: 18px; margin: 10px;" />
+
+<img src="https://github.com/user-attachments/assets/fd22296a-374b-450d-8efe-4250eae2586c" alt="Mobile_SS_2" width="260" style="border-radius: 18px; margin: 10px;" />
+
+<img src="https://github.com/user-attachments/assets/1f994ecb-a8a2-4a3d-bd7c-03911229c4ca" alt="Mobile_SS_3" width="260" style="border-radius: 18px; margin: 10px;" />
+
+</p>
 
 ---
 
